@@ -1,22 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Portfolio Page</h1>
-    <h2>About me</h2>
-    <p>Hello! My name is Adel. I am a full-cycle recruiter & talent leader working with Silicon Valley tech startups and currently immersing myself in front-end web development.</p>
-
-    <h2>Projects</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ipsam quos quisquam vel veniam necessitatibus at id quibusdam quis repellat.</p>
-    <p>Consequatur possimus similique adipisci. Nulla non eum id veritatis minima vel labore voluptatem dolores, ratione, quisquam expedita voluptate laudantium doloribus?</p>
-    <p>Amet enim illo mollitia, voluptatem, ratione magni numquam obcaecati adipisci iusto, architecto qui dolorum nisi quidem! Quam eum consequatur maiores?</p>
-
-    <h2>Contact details</h2>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adele portfolio page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html#about">About me</a>
+        <a href="./index.html#skills">Skills</a>
+        <a href="./index.html#projects">Projects</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+      <section>
+        <h1>
+          Hi, I'm Adele. I am a full-cycle tech recruiter & soon to be a web
+          developer
+        </h1>
+      </section>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About me</h2>
+        <p>I'm Adele, a tech talent leader in the US start-up space.</p>
+        <p>
+          My passion is connecting people & technology that led me to pursue a
+          career in tech recruitment. I am helping various start-ups across US &
+          Europe to build a stellar team. Main industries: SaaS, IoT, AR/VR,
+          AI/ML, Web3, Blockchain, Crypto
+        </p>
+        <p>Currently, I am building my skills in web-development.</p>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/kovacsadel/" target="_blank">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8Al9MAlNJnueEAktGr0uv4/f4ootgAj9AAk9EAkNDj8fnl8/mj0OoaoNf1+fzY7fd4wOQAmtS93fCJyOduveJcs95Jq9x6weTq9/zL5/TE5PSl1Ozx+/2SyecxoNdAptiaz+rS6vW03O+r2e5ltN+q732cAAADwElEQVR4nO2d63KiMBhAJWQRUrR4v1VXsfv+r7iow1aCaN2BxKTn/HJMDJyBkC8XSa8HAAAAAAAAAAAAAAAAAAAAAAAAAAAA32E1mc5CQ0wnK+N+2TxQiTBFooJ5ZlZwFIvALCIeGfR7XyjDfifU4t2Y4SKxIBgEycKU4MjGFTyhlmYEs9iSYBDEZh43c9MPmS/E3ITgyprfCRPt4sRWLTyhJgYMp3YepBeSqQHDmb1qWFTEmQHD0KphiCGGGGKIIYYYYmjG8DR05LOhTPrhbD6U0lPDZPyxPefKlp1cSOuGMtz+y5cPO1C0bZhUjr8de2co+tWcWft9ZcuG8VrLOmr9cWPZsK9nzVqviXYNk10t72+/DNWxlrf1oVXLhno17CDCs2y4qeX17BrKj1revV+G9UmFtGU/24ZBrE8qDHxrD/XDR+2HbbbjUlWtifP2e1C2DasPm7CDSSrrhkX3qayLm30Xc1T2DQMh5oPN5rjry05GMl7AsDgJqZTqao7xJQw7BcMXNXyiQOcMT0vyhv39vj+W6lvF2jYUcYWv9lAodfV1uepPysVunW6jIvpZZZ+z8TckbUdts+j9mrcyahOjSkI0OhWRJLtqHBttFg9XPFo2lL+qOaN+maD1qz6KcC5ZRvWy8/2DQM8Vw0ERDtS7y2em90M9ZwzV8K2p+MPddYEvazioJgxE2lz+8t6N6orhoeEWvXBv6MMVw/sLDNd3LqIrhg9Y3Glx/TCcNF9ETwzvjO94YvjEYFcntNAePuLYeJu+rOHtaxit8jy9Ebv10sZW3ynDPBzHRZdjHN74h4F7d+kNw2k5VCVFfVausdF3yHB6dSPKXE9tXEvujmF+3YUQtf8z7ZrG6twxrE4sSr0qHpoeps4YatNu8qClfzhveKz2c8UfLf3TeUP9fzf6OpXPpp6+M4YjvQwt3X3DP1oZSkt331DvAcZauvuGesyiGx6dN+xrv8QQw3bB8IufbDjEEMNOacEwwrDxrQbeGG4w7BQMr0QwxBDDjjAR0/wAw6bpNW8M184YlhNoz/YPnTEsh9Rqs9wPDV2ph94b9v7bMH9RQzFapWn6dqH4lI0fJZSoLL1m9aqza+c3Ygh54fSpmiDK70X9/GVQfSVr4xFcW8n+NBhiiCGGGGKIIYYYYoghhhhieDY08T5v/9/J7v979f3fG8H//S1+wB4l/u8zY22vIGlsryBr+z1tH59aaywt7Nll7Ba94P2+az2je+fNbOydBwAAAAAAAAAAAAAAAAAAAAAAAAAA4CZ/AdtsXyuxMRRGAAAAAElFTkSuQmCC"
+                alt="Linkedin logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/meetadele" target="_blank">
+              <img
+                src="https://pngimg.com/uploads/github/small/github_PNG58.png"
+                alt="Github logo"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+          ratione aliquid explicabo ullam officiis? Alias.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ea
+          commodi tenetur earum veniam aperiam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          consequuntur suscipit quam? Reprehenderit aliquam vero iusto
+          voluptatum perferendis autem quo?
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact me</h2>
+        <p>
+          I'm always happy to chat:) Let's see if we can build something amazing
+          together!
+        </p>
+        <p>
+          Straight shot to my inbox:
+          <a href="mailto:adel@meetvega.com" target="_blank"
+            >adel@meetvega.com</a
+          >
+        </p>
+        <p>
+          Fill in your info in the form below and I look forward to hearing from
+          you!
+        </p>
+        <form action="https://formspree.io/f/xgeddwyj" method="post">
+          <label>
+            Name
+            <input type="text" placeholder="name" name="name" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="email" name="email" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" id="message"></textarea>
+          </label>
+          <input type="submit" value="Send message" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2022 | Designed & coded with ❤ by Adel Kovacs</p>
+    </footer>
+  </body>
 </html>
