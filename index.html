@@ -5,164 +5,334 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adele portfolio page</title>
+
+    <!--    CSS     -->
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/portfolio.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/f0d19ed779.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
+    <!-- ---HEADER--- -->
     <header>
+      <!--  Navigation   -->
+
       <nav>
+        <input type="checkbox" id="hamburger" name="hamburger" />
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
         <ul class="nav-list">
-          <li class="nav-list__elem"><a href="./index.html#home">Home</a></li>
-          <li class="nav-list__elem"><a href="./index.html#about">About</a></li>
-          <li class="nav-list_elem">
-            <a href="./index.html#skills">Skills</a>
+          <li class="nav-list__item"><a href="#home">Home</a></li>
+          <li class="nav-list__item"><a href="#about">About</a></li>
+          <li class="nav-list__item">
+            <a href="#skills">Skills</a>
           </li>
-          <li class="nav-list_elem">
-            <a href="./index.html#projects">Projects</a>
+          <li class="nav-list__item">
+            <a href="#portfolio">Portfolio</a>
           </li>
-          <li class="nav-list_elem">
-            <a href="./index.html#contact">Contact</a>
+          <li class="nav-list__item">
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
+    <!--x ---HEADER--- X-->
 
+    <!-- ---HOME---    -->
     <main>
-      <section id="home">
-        <h1>Hi, I'm Adele. I am a Talent Business Partner & Web developer</h1>
-        <h2>Globetrotter, Hodler, Italian food lover</h2>
-      </section>
-
-      <section id="about">
-        <h2>About me</h2>
+      <section id="home" class="home">
+        <div class="home-container">
+          <h1 class="home-container__name">Hi, I'm Adele!</h1>
+          <h2 class="home-container__job">
+            I am a Talent Business Partner and
+            <span class="home-container__highlight">Frontend</span>
+            Developer.
+          </h2>
+          <h2 class="home-container__text">
+            Globetrotter, Hodler, Italian food lover.
+          </h2>
+        </div>
         <img
-          src="./images/Linkedin_profile_pic.jpg"
-          alt="Linkedin profile picture"
+          class="home-image"
+          src="./assets/main.jpg"
+          alt="Adele Linkedin headshot"
         />
-        <p>
-          I'm Adele, Talent Leader & Frontend Developer working with tech
-          start-ups worldwide.
-        </p>
-        <p>
-          <span>A people person & a builder at heart.</span>
-          Passionate about collaborating with talented people across the globe
-          to bring digital products to life & create someting exciting from
-          scratch.
-        </p>
-        <p>
-          Comfortable working virtually across time zones and with various
-          cultures. Have lived & worked in Spain, Italy, Switzerland, South
-          America so far.
-        </p>
-        <p>
-          Currently working fully-remote with startups mainly in US & Europe.
-          Main industries: SaaS, IoT, AR/VR, AI/ML, Web3, Blockchain, Crypto.
-        </p>
-        <p>
-          Drop me a line in the contact form <a href="#contact">below</a> or
-          check me out at:
-        </p>
-        <ul class="socials">
-          <li>
-            <a href="https://www.linkedin.com/in/kovacsadel/" target="_blank">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-                alt="Linkedin"
-                width="40"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/meetadele" target="_blank">
-              <img
-                src="https://pngimg.com/uploads/github/small/github_PNG58.png"
-                alt="Github"
-                width="40"
-              />
-            </a>
-          </li>
-        </ul>
       </section>
+      <!--X ---HOME---X    -->
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML, CSS</li>
-          <li>Javascript</li>
-          <li>React</li>
-          <li>Python</li>
-          <li>Django</li>
-          <li>Node.js</li>
-          <li>SQL</li>
-          <li>Git, Github</li>
-        </ul>
+      <!-- ---ABOUT---    -->
+      <section id="about" class="about">
+        <h2 class="about-title section-title">About me</h2>
+        <div class="about-container">
+          <img
+            class="about-container__img"
+            src="./assets/main.jpg"
+            alt="Linkedin profile picture"
+          />
+          <div class="about-content">
+            <p>
+              I'm Adele, Talent Leader & Frontend Developer working with tech
+              start-ups worldwide.
+            </p>
+            <p>
+              <span>A people person & a builder at heart.</span>
+              Passionate about collaborating with talented people across the
+              globe to bring digital products to life & create someting exciting
+              from scratch.
+            </p>
+            <p>
+              Comfortable working virtually across time zones and with various
+              cultures. Have lived & worked in Spain, Italy, Switzerland, South
+              America so far.
+            </p>
+            <p>
+              Currently working fully-remote with startups mainly in USA &
+              Europe. Main industries: SaaS, IoT, AR/VR, AI/ML, Web3,
+              Blockchain, Crypto.
+            </p>
+            <p>
+              Drop me a line in the contact form <a href="#contact">below</a> or
+              check me out at:
+            </p>
+            <div class="about-content__container">
+              <ul class="about-content__socials">
+                <li class="about-content__socialitems">
+                  <a
+                    href="https://www.linkedin.com/in/kovacsadel/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="about-content__socialitems">
+                  <a href="https://github.com/meetadele" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
+      <!--X ---ABOUT---X    -->
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>Project 1</p>
-        <p>Project 2</p>
-        <p>Project 3</p>
-        <p>Project 4</p>
+      <!-- ---SKILLS---    -->
+      <section id="skills" class="skills">
+        <h2 class="skills-title section-title">Skills</h2>
+        <div class="skills-container">
+          <ul class="skills-list">
+            <li class="skills-items">
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML</p>
+            </li>
+            <li class="skills-items">
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS</p>
+            </li>
+            <li class="skills-items">
+              <i class="fa-brands fa-js"></i>
+              <p>Javascript</p>
+            </li>
+            <li class="skills-items">
+              <i class="fa-brands fa-react"></i>
+              <p>React</p>
+            </li>
+            <li class="skills-items">
+              <i class="fa-brands fa-python"></i>
+              <p>Python</p>
+            </li>
+            <li class="skills-items">
+              <i class="fa-brands fa-git-alt"></i>
+              <p>Git</p>
+            </li>
+          </ul>
+        </div>
       </section>
+      <!--X ---SKILLS---X    -->
 
-      <section id="contact">
-        <h2>Contact me</h2>
-        <p>
-          I'm always happy to chat:) Let's see if we can build something amazing
-          together!
-        </p>
-        <p>
-          Straight shot to my inbox:
-          <a href="mailto:adel@meetvega.com" target="_blank"
-            >adel@meetvega.com</a
+      <!-- ---PORTFOLIO---    -->
+      <section id="portfolio" class="portfolio">
+        <h2 class="portfolio-title section-title">Portfólió</h2>
+        <div class="portfolio-container">
+          <div class="portfolio-project">
+            <img
+              class="portfolio-project__image"
+              src="./assets/projekt.png"
+              alt="My project"
+            />
+            <div class="portfolio-project__container">
+              <h3>Career coach website</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Debitis accusamus nisi, nihil rem libero modi!
+              </p>
+              <h4>Made with</h4>
+              <div class="portfolio-project__skills">
+                <ul class="project_skills-list">
+                  <li class="project_skills-items">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                  </li>
+                  <li class="project_skills-items">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                  </li>
+                  <li class="project_skills-items">
+                    <i class="fa-brands fa-js"></i>
+                    <p>Javascript</p>
+                  </li>
+                  <li class="project_skills-items">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                  </li>
+                </ul>
+                <div class="portfolio-project__links">
+                  <button class="portfolio-project__button button-livesite">
+                    Live Site
+                  </button>
+                  <button class="portfolio-project__button button-github">
+                    Github repo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-project">
+            <div class="portfolio-project__container">
+              <h3>Career coach website</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Debitis accusamus nisi, nihil rem libero modi!
+              </p>
+              <h4>Made with</h4>
+              <div class="portfolio-project__skills">
+                <ul class="project_skills-list">
+                  <li class="project_skills-items">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                  </li>
+                  <li class="project_skills-items">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                  </li>
+                  <li class="project_skills-items">
+                    <i class="fa-brands fa-js"></i>
+                    <p>Javascript</p>
+                  </li>
+                  <li class="project_skills-items">
+                    <i class="fa-brands fa-react"></i>
+                    <p>React</p>
+                  </li>
+                </ul>
+                <div class="portfolio-project__links">
+                  <button class="portfolio-project__button button-livesite">
+                    Live Site
+                  </button>
+                  <button class="portfolio-project__button button-github">
+                    Github repo
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img
+              class="portfolio-project__image"
+              src="./assets/projekt.png"
+              alt="My project"
+            />
+          </div>
+        </div>
+      </section>
+      <!--X ---PORTFÓLIÓ---X    -->
+
+      <!-- ---CONTACT---    -->
+      <section id="contact" class="contact">
+        <h2 class="contact-title section-title">Contact me</h2>
+        <div class="contact-container">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xgeddwyj"
+            method="post"
           >
-        </p>
-
-        <p>
-          Fill in your info in the form below. I look forward to hearing from
-          you!
-        </p>
-
-        <form action="https://formspree.io/f/xgeddwyj" method="post">
-          <label>
-            Name
-            <input type="text" placeholder="name" name="name" />
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="email" name="email" />
-          </label>
-          <label>
-            Message
-            <textarea name="message" id="message"></textarea>
-          </label>
-          <input type="submit" value="Send message" />
-        </form>
+            <label>
+              Name
+              <input type="text" placeholder="name" name="name" />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="email" name="email" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" id="message"></textarea>
+            </label>
+            <input type="submit" value="Send message" />
+          </form>
+          <div class="contact-text">
+            <p>
+              I'm always happy to chat:) Let's see if we can build something
+              amazing together!
+            </p>
+            <p>
+              Straight shot to my inbox:
+              <a href="mailto:adel@meetvega.com" target="_blank"
+                >adel@meetvega.com</a
+              >
+            </p>
+            <p>
+              Fill in your info in the contact form. I look forward to hearing
+              from you!
+            </p>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <ul class="contact-socials">
+            <li class="contact-socials__icons">
+              <a href="https://www.linkedin.com/in/kovacsadel/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="contact-socials__icons">
+              <a href="https://github.com/meetadele" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
+      <!--X ---CONTACT---X    -->
     </main>
 
+    <!-- ---FOOTER--- -->
     <footer>
+      <!--  Copyright -->
       <p>&copy; 2022 | Designed & coded with ❤ by Adele</p>
 
-      <ul class="socials">
-        <li>
-          <a href="https://www.linkedin.com/in/kovacsadel/" target="_blank">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-              alt="Linkedin"
-              width="40"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/meetadele" target="_blank">
-            <img
-              src="https://pngimg.com/uploads/github/small/github_PNG58.png"
-              alt="Github"
-              width="40"
-            />
-          </a>
-        </li>
-      </ul>
+      <!--Vissza a főoldalra-->
+      <a class="back to top" href="./index.html#home">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
     </footer>
+    <!--X ---FOOTER--- X-->
   </body>
 </html>
