@@ -1,0 +1,500 @@
+:root {
+  --gray: #262626;
+  --red: #cf404d;
+  --black: #161616;
+  --white: #ffffff;
+  --mainFont: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 16px;
+  min-width: 200px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  font-family: var(--mainFont);
+  color: var(--white);
+}
+
+.section-title {
+  color: var(--red);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin: 0 0 2rem;
+  padding-top: 50px;
+}
+
+/*-------------------------Header-------------------------*/
+header {
+  background: var(--gray);
+  position: fixed;
+  width: 100vw;
+  padding: 2%;
+  z-index: 10;
+}
+
+nav {
+  position: relative;
+  left: 90%;
+}
+
+.nav-checkbox {
+  display: none;
+}
+
+.nav-checkbox__button {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-checkbox__line {
+  width: 25px;
+  height: 3px;
+  background: var(--red);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: var(--gray);
+  width: 50vw;
+  min-width: 150px;
+  max-width: 200px;
+  right: -200px;
+  visibility: hidden;
+  transition: right 0.4s, visibility 0.4s;
+}
+
+.nav-list__item {
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.nav-list a {
+  color: var(--red);
+  font-weight: 800;
+  padding: 20px 0;
+  margin: 2vh 0;
+}
+
+.nav-checkbox:checked ~ .nav-list {
+  visibility: visible;
+  right: 0;
+}
+
+/*---------------------------Home--------------------------*/
+.home {
+  display: flex;
+  height: 100vh;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--red);
+}
+
+.home-container {
+  text-align: center;
+}
+
+.home-container__name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.home-container__job {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+}
+
+.home-container__text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.home-image {
+  max-width: 200px;
+  border-radius: 80%;
+  border: 8px dotted var(--red);
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/*---------------------------About me--------------------------*/
+.about {
+  height: 100vh;
+  border-bottom: 1px solid var(--red);
+}
+
+.about-container__img {
+  display: block;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+.about-content {
+  margin: 30px auto 20px 10px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.about-content__socials {
+  display: flex;
+  justify-content: center;
+}
+
+.about-content__socialitems {
+  flex-basis: 15%;
+  font-size: 2.5rem;
+}
+
+.about-content .about-contact a {
+  color: var(--red);
+}
+
+a i {
+  color: var(--red);
+}
+
+/*---------------------------Skills--------------------------*/
+.skills {
+  height: 100vh;
+  border-bottom: 1px solid var(--red);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 6% auto;
+}
+
+.skills-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-basis: 40%;
+  margin: 0;
+}
+
+.skills-items i {
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.skills-items p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/*---------------------------Portfolio--------------------------*/
+.portfolio {
+  border-bottom: 1px solid var(--red);
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+}
+
+.portfolio-project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 80px;
+  max-height: 100vh;
+}
+
+.portfolio-project__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio-project__container h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: var(--red);
+}
+
+.portfolio-project__container h4 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: var(--red);
+}
+
+.portfolio-project__skills i {
+  font-size: 1.5rem;
+}
+
+.project_skills-list {
+  display: flex;
+}
+
+.project_skills-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-basis: 15%;
+  margin: 0;
+}
+
+.portfolio-project__links button {
+  font-size: 1.2rem;
+}
+
+.portfolio-project__image {
+  width: 70%;
+  display: block;
+  margin: 0px auto;
+}
+
+/*-------------------------Contact-------------------------*/
+.contact {
+  height: 100vh;
+  border-bottom: 1px solid var(--red);
+}
+
+.contact-text {
+  text-align: center;
+  margin: 10px 10px 30px;
+}
+
+.contact-text a {
+  color: var(--red);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form input {
+  height: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+form textarea {
+  height: 70px;
+  padding: 15px;
+  text-align: left;
+  resize: none;
+  text-transform: uppercase;
+}
+
+form button {
+  padding: 8px 30px;
+  background-color: var(--red);
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-text p {
+  margin-bottom: 10px;
+}
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-socials__icons {
+  display: flex;
+  justify-content: center;
+  flex-basis: 15%;
+  font-size: 2.5rem;
+}
+
+/*-------------------------Footer-------------------------*/
+footer {
+  height: 5vw;
+  text-align: center;
+}
+
+footer i {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+/*-------------------------Responsive-------------------------*/
+
+/* Közepes képernyőméret */
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  nav {
+    position: relative;
+    left: 30%;
+  }
+
+  .nav-checkbox__button {
+    display: none;
+  }
+
+  .nav-list {
+    visibility: visible;
+    position: static;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+    max-width: 70vw;
+  }
+
+  .nav-list__item a {
+    padding: 2px 0;
+    margin: 0;
+  }
+
+  .about-container__img {
+    max-width: 300px;
+  }
+
+  .about-content__socialitems {
+    font-size: 3rem;
+  }
+
+  .about-content {
+    font-size: 1.2rem;
+  }
+
+  .skills-items i {
+    font-size: 2.5rem;
+  }
+
+  .skills-items p {
+    font-size: 2rem;
+  }
+
+  .contact-socials__icons {
+    font-size: 3rem;
+  }
+}
+
+/* Nagy képernyőméret */
+@media screen and (min-width: 1024px) {
+  .home-image {
+    max-width: 350px;
+  }
+
+  .home-container__name {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .home-container__job {
+    font-size: 2.2rem;
+    margin: 10px 20px;
+  }
+
+  .home-container__text {
+    font-size: 2.2rem;
+    margin: 10px 20px;
+  }
+
+  .about-container__img {
+    max-width: 350px;
+  }
+
+  .about-content__socialitems {
+    font-size: 3.5rem;
+  }
+
+  .about-content {
+    font-size: 1.4rem;
+  }
+
+  .skills-items i {
+    font-size: 3rem;
+  }
+
+  .skills-items p {
+    font-size: 2.5rem;
+  }
+
+  .portfolio-project {
+    display: flex;
+    flex-direction: row;
+    max-width: 90vw;
+    max-height: 90vh;
+    margin-bottom: 100px;
+  }
+
+  .portfolio-project__container h3 {
+    font-size: 2rem;
+  }
+
+  .portfolio-project__container h4 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-project__skills i {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-project__links button {
+    font-size: 1.5rem;
+  }
+
+  .contact-socials__icons {
+    font-size: 3.5rem;
+  }
+}
