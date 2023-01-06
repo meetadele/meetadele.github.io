@@ -7,14 +7,7 @@
     <title>Adele portfolio page</title>
 
     <!--    CSS     -->
-    <link rel="stylesheet" href="./styles/base.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/home.css" />
-    <link rel="stylesheet" href="./styles/about.css" />
-    <link rel="stylesheet" href="./styles/skills.css" />
-    <link rel="stylesheet" href="./styles/portfolio.css" />
-    <link rel="stylesheet" href="./styles/contact.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,13 +28,15 @@
       <!--  Navigation   -->
 
       <nav>
-        <input type="checkbox" id="hamburger" name="hamburger" />
-        <label for="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
+        <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
 
+        <label for="nav-checkbox">
+          <span class="nav-checkbox__button">
+            <span class="nav-checkbox__line"></span>
+            <span class="nav-checkbox__line"></span>
+            <span class="nav-checkbox__line"></span>
+          </span>
+        </label>
         <ul class="nav-list">
           <li class="nav-list__item"><a href="#home">Home</a></li>
           <li class="nav-list__item"><a href="#about">About</a></li>
@@ -65,17 +60,15 @@
         <div class="home-container">
           <h1 class="home-container__name">Hi, I'm Adele!</h1>
           <h2 class="home-container__job">
-            I am a Talent Business Partner and
-            <span class="home-container__highlight">Frontend</span>
-            Developer.
+            I am an International Recruiter & Frontend Developer.
           </h2>
           <h2 class="home-container__text">
-            Globetrotter, Hodler, Italian food lover.
+            Avid lerner, Web3 enthusiast & Italian food lover.
           </h2>
         </div>
         <img
           class="home-image"
-          src="./assets/main.jpg"
+          src="./assets/main.png"
           alt="Adele Linkedin headshot"
         />
       </section>
@@ -87,31 +80,25 @@
         <div class="about-container">
           <img
             class="about-container__img"
-            src="./assets/main.jpg"
-            alt="Linkedin profile picture"
+            src="./assets/main.png"
+            alt="Adele Linkedin headshot"
           />
           <div class="about-content">
             <p>
-              I'm Adele, Talent Leader & Frontend Developer working with tech
-              start-ups worldwide.
+              I'm Adele, International Recruiter & Frontend Developer working
+              with cutting-edge tech start-ups across the globe.
             </p>
             <p>
               <span>A people person & a builder at heart.</span>
-              Passionate about collaborating with talented people across the
-              globe to bring digital products to life & create someting exciting
-              from scratch.
+              I am passionate about collaborating with talented people to bring
+              digital products to life. If not developing you can find me
+              building stellar teams for high-growth startups & scaleups.
             </p>
             <p>
-              Comfortable working virtually across time zones and with various
-              cultures. Have lived & worked in Spain, Italy, Switzerland, South
-              America so far.
+              Currently working fully-remote with companies mainly in USA, LATAM
+              & Europe. Industries: SaaS, IoT, AR/VR, Web3, Blockchain, Crypto.
             </p>
-            <p>
-              Currently working fully-remote with startups mainly in USA &
-              Europe. Main industries: SaaS, IoT, AR/VR, AI/ML, Web3,
-              Blockchain, Crypto.
-            </p>
-            <p>
+            <p class="about-contact">
               Drop me a line in the contact form <a href="#contact">below</a> or
               check me out at:
             </p>
@@ -119,7 +106,7 @@
               <ul class="about-content__socials">
                 <li class="about-content__socialitems">
                   <a
-                    href="https://www.linkedin.com/in/kovacsadel/"
+                    href="https://www.linkedin.com/in/meetadele/"
                     target="_blank"
                   >
                     <i class="fa-brands fa-linkedin"></i>
@@ -173,7 +160,7 @@
 
       <!-- ---PORTFOLIO---    -->
       <section id="portfolio" class="portfolio">
-        <h2 class="portfolio-title section-title">Portfólió</h2>
+        <h2 class="portfolio-title section-title">Portfolio</h2>
         <div class="portfolio-container">
           <div class="portfolio-project">
             <img
@@ -207,20 +194,25 @@
                     <p>React</p>
                   </li>
                 </ul>
-                <div class="portfolio-project__links">
-                  <button class="portfolio-project__button button-livesite">
-                    Live Site
-                  </button>
-                  <button class="portfolio-project__button button-github">
-                    Github repo
-                  </button>
-                </div>
+              </div>
+              <div class="portfolio-project__links">
+                <button class="portfolio-project__button button-livesite">
+                  Live Site
+                </button>
+                <button class="portfolio-project__button button-github">
+                  Github repo
+                </button>
               </div>
             </div>
           </div>
           <div class="portfolio-project">
+            <img
+              class="portfolio-project__image"
+              src="./assets/projekt.png"
+              alt="My project"
+            />
             <div class="portfolio-project__container">
-              <h3>Career coach website</h3>
+              <h3>Python Story Generator</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Debitis accusamus nisi, nihil rem libero modi!
@@ -229,37 +221,20 @@
               <div class="portfolio-project__skills">
                 <ul class="project_skills-list">
                   <li class="project_skills-items">
-                    <i class="fa-brands fa-html5"></i>
-                    <p>HTML</p>
-                  </li>
-                  <li class="project_skills-items">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p>CSS</p>
-                  </li>
-                  <li class="project_skills-items">
-                    <i class="fa-brands fa-js"></i>
-                    <p>Javascript</p>
-                  </li>
-                  <li class="project_skills-items">
-                    <i class="fa-brands fa-react"></i>
-                    <p>React</p>
+                    <i class="fa-brands fa-python"></i>
+                    <p>Python</p>
                   </li>
                 </ul>
-                <div class="portfolio-project__links">
-                  <button class="portfolio-project__button button-livesite">
-                    Live Site
-                  </button>
-                  <button class="portfolio-project__button button-github">
-                    Github repo
-                  </button>
-                </div>
+              </div>
+              <div class="portfolio-project__links">
+                <button class="portfolio-project__button button-livesite">
+                  Live Site
+                </button>
+                <button class="portfolio-project__button button-github">
+                  Github repo
+                </button>
               </div>
             </div>
-            <img
-              class="portfolio-project__image"
-              src="./assets/projekt.png"
-              alt="My project"
-            />
           </div>
         </div>
       </section>
@@ -275,18 +250,19 @@
             method="post"
           >
             <label>
-              Name
-              <input type="text" placeholder="name" name="name" />
+              <input type="text" placeholder="Name" name="name" />
             </label>
             <label>
-              Email
-              <input type="email" placeholder="email" name="email" />
+              <input type="email" placeholder="Email" name="email" />
             </label>
             <label>
-              Message
-              <textarea name="message" id="message"></textarea>
+              <textarea
+                name="message"
+                placeholder="Type your message here"
+                id="message"
+              ></textarea>
             </label>
-            <input type="submit" value="Send message" />
+            <button type="submit" name="submit">Get in touch</button>
           </form>
           <div class="contact-text">
             <p>
@@ -305,20 +281,18 @@
             </p>
           </div>
         </div>
-        <div class="contact-socials">
-          <ul class="contact-socials">
-            <li class="contact-socials__icons">
-              <a href="https://www.linkedin.com/in/kovacsadel/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </li>
-            <li class="contact-socials__icons">
-              <a href="https://github.com/meetadele" target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="contact-socials">
+          <li class="contact-socials__icons">
+            <a href="https://www.linkedin.com/in/meetadele/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="contact-socials__icons">
+            <a href="https://github.com/meetadele" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
       </section>
       <!--X ---CONTACT---X    -->
     </main>
