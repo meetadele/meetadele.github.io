@@ -245,6 +245,7 @@ a i {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 15px 20px;
 }
 
 .portfolio-project__container h3 {
@@ -260,7 +261,7 @@ a i {
 }
 
 .portfolio-project__skills i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .project_skills-list {
@@ -278,7 +279,21 @@ a i {
 }
 
 .portfolio-project__links button {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: var(--black);
+  border-radius: 20px;
+  border: 3px solid var(--green);
+  color: var(--white);
+  font-weight: 600;
+  transition-duration: 0.4s;
+  transition: all 300ms ease-out;
+}
+
+.portfolio-project__links button:hover {
+  background-color: var(--green); /* Green */
+  color: var(--white);
 }
 
 .portfolio-project__image {
@@ -358,7 +373,7 @@ footer i {
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .section-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-top: 85px;
   }
 
@@ -435,6 +450,22 @@ footer i {
   }
 
   .portfolio-project__container h4 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-project__container h3 {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-project__image {
+    width: 90%;
+  }
+
+  .portfolio-project__skills i {
+    font-size: 2.5rem;
+  }
+
+  .portfolio-project__links button {
     font-size: 1.5rem;
   }
 
@@ -463,7 +494,6 @@ footer i {
 /* Desktop */
 @media only screen and (min-width: 1024px) {
   .section-title {
-    font-size: 2.5rem;
     padding-top: 100px;
   }
 
@@ -504,6 +534,11 @@ footer i {
     max-width: 90vw;
     max-height: 90vh;
     margin-bottom: 100px;
+  }
+
+  .portfolio-project__image {
+    width: 50%;
+    margin: auto;
   }
 
   .portfolio-project__container h3 {
