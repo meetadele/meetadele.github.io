@@ -290,7 +290,7 @@ a i {
 /*-------------------------Contact-------------------------*/
 .contact-text {
   text-align: center;
-  margin: 10px 10px 30px;
+  margin: 10px 10px 20px;
 }
 
 .contact-text a {
@@ -311,29 +311,31 @@ a i {
   text-align: center;
 }
 
-form input {
-  height: 30px;
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 10px;
-  text-transform: uppercase;
+::placeholder {
+  color: var(--black);
+  opacity: 1;
+  font-family: var(--mainFont);
+  font-weight: 300;
 }
 
-form textarea {
-  height: 70px;
-  padding: 15px;
-  text-align: left;
-  resize: none;
-  text-transform: uppercase;
+.input {
+  margin: 8px 0;
+  width: 100%;
+  padding: 12px 20px;
 }
 
 form button {
-  padding: 8px 30px;
-  background-color: var(--green);
-  border-radius: 5px;
-  margin-top: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
+  background: var(--green);
+  border: 2px solid var(--green);
+  border-radius: 10px;
+  color: var(--black);
+  font-size: 1.1rem;
+  width: 60%;
+  padding: 0.4rem;
+  transition: 300ms;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 10px auto;
 }
 
 .contact-text p {
@@ -353,8 +355,8 @@ footer i {
 
 /*-------------------------Responsive-------------------------*/
 
-/* Közepes képernyőméret */
-@media (min-width: 768px) {
+/* Tablet */
+@media only screen and (min-width: 768px) {
   .section-title {
     font-size: 2rem;
     padding-top: 85px;
@@ -362,7 +364,6 @@ footer i {
 
   .header-logo {
     width: 40px;
-    margin: auto left;
   }
 
   nav {
@@ -429,21 +430,38 @@ footer i {
     font-size: 2rem;
   }
 
+  .portfolio-container {
+    font-size: 1.2rem;
+  }
+
+  .portfolio-project__container h4 {
+    font-size: 1.5rem;
+  }
+
   .contact {
-    height: 80vh;
+    height: 90vh;
   }
 
   .contact-form {
     width: 350px;
   }
 
-  form textarea {
-    width: 342px;
+  .contact-text {
+    font-size: 1.2rem;
+  }
+
+  ::placeholder {
+    font-size: 1.2rem;
+  }
+
+  form button {
+    font-size: 1.3rem;
+    padding: 0.7rem;
   }
 }
 
-/* Nagy képernyőméret */
-@media screen and (min-width: 1024px) {
+/* Desktop */
+@media only screen and (min-width: 1024px) {
   .section-title {
     font-size: 2.5rem;
     padding-top: 100px;
