@@ -156,7 +156,7 @@ nav {
 
 /*---------------------------About me--------------------------*/
 .about {
-  height: 120vh;
+  padding-bottom: 60px;
 }
 
 .about-content {
@@ -187,7 +187,7 @@ a i {
 
 /*---------------------------Skills--------------------------*/
 .skills {
-  height: 100vh;
+  padding-bottom: 60px;
 }
 
 .skills-list {
@@ -220,6 +220,9 @@ a i {
 }
 
 /*---------------------------Portfolio--------------------------*/
+.portfolio {
+  padding-bottom: 60px;
+}
 
 .portfolio-container {
   display: flex;
@@ -285,10 +288,6 @@ a i {
 }
 
 /*-------------------------Contact-------------------------*/
-.contact {
-  height: 110vh;
-}
-
 .contact-text {
   text-align: center;
   margin: 10px 10px 30px;
@@ -402,6 +401,10 @@ footer i {
     max-width: 300px;
   }
 
+  .about {
+    padding-bottom: 160px;
+  }
+
   .about-content {
     margin: 30px 30px 20px 30px;
   }
@@ -414,12 +417,20 @@ footer i {
     font-size: 1.2rem;
   }
 
+  .skills {
+    padding-bottom: 160px;
+  }
+
   .skills-items i {
     font-size: 4rem;
   }
 
   .skills-items p {
     font-size: 2rem;
+  }
+
+  .contact {
+    height: 80vh;
   }
 
   .contact-form {
@@ -451,10 +462,6 @@ footer i {
   .home-container__text {
     font-size: 1.8rem;
     margin: 10px 20px;
-  }
-
-  .about {
-    height: 130vh;
   }
 
   .about-content__socialitems {
