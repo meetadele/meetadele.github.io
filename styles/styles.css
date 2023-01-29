@@ -76,10 +76,23 @@ nav {
   cursor: pointer;
 }
 
-.nav-checkbox__line {
+.nav-checkbox__line,
+.nav-checkbox__line::before,
+.nav-checkbox__line::after {
+  position: absolute;
   width: 25px;
   height: 3px;
   background: var(--green);
+}
+
+.nav-checkbox__line::before {
+  content: "";
+  top: -10px;
+}
+
+.nav-checkbox__line::after {
+  content: "";
+  top: 10px;
 }
 
 .nav-list {
@@ -108,9 +121,22 @@ nav {
   margin: 2vh 0;
 }
 
-.nav-checkbox:checked ~ .nav-list {
+#nav-checkbox:checked ~ .nav-list {
   visibility: visible;
   right: 0;
+}
+
+#nav-checkbox:checked ~ .nav-checkbox__button .nav-checkbox__line {
+  transform: rotate(45deg);
+}
+
+#nav-checkbox:checked ~ .nav-checkbox__button .nav-checkbox__line::before {
+  display: none;
+}
+
+#nav-checkbox:checked ~ .nav-checkbox__button .nav-checkbox__line::after {
+  top: 0;
+  transform: rotate(90deg);
 }
 
 /*---------------------------Home--------------------------*/
@@ -207,7 +233,7 @@ a i {
   margin: 0;
   color: var(--white);
   transition: all 300ms ease-out;
-  transition-duration: 0, 4s;
+  transition-duration: 4s;
 }
 
 .skills-items:hover {
