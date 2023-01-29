@@ -458,6 +458,10 @@ footer i {
     margin: 30px 30px 20px 30px;
   }
 
+  .about-content p {
+    padding: 0 20px;
+  }
+
   .about-content__socialitems {
     font-size: 3rem;
   }
@@ -551,6 +555,10 @@ footer i {
 
   .about-content {
     font-size: 1.4rem;
+  }
+
+  .about-content p {
+    padding: 0 40px;
   }
 
   .skills-items i {
