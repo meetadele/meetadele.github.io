@@ -233,7 +233,7 @@ a i {
   margin: 0;
   color: var(--white);
   transition: all 300ms ease-out;
-  transition-duration: 4s;
+  transition-duration: 0.4s;
 }
 
 .skills-items:hover {
@@ -486,6 +486,10 @@ footer i {
     font-size: 1.2rem;
   }
 
+  .portfolio-project__container {
+    text-align: left;
+  }
+
   .portfolio-project__container h4 {
     font-size: 1.8rem;
   }
@@ -516,6 +520,8 @@ footer i {
 
   .contact-text {
     font-size: 1.2rem;
+    margin: 10px 30px 20px;
+    text-align: left;
   }
 
   ::placeholder {
