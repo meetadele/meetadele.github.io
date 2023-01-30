@@ -588,6 +588,10 @@ footer i {
     margin: auto;
   }
 
+  .portfolio-container {
+    font-size: 1.4rem;
+  }
+
   .portfolio-project__container h3 {
     font-size: 2rem;
   }
@@ -602,5 +606,9 @@ footer i {
 
   .portfolio-project__links button {
     font-size: 1.5rem;
+  }
+
+  .contact-text {
+    font-size: 1.4rem;
   }
 }
