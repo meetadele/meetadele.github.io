@@ -4,6 +4,20 @@
 
 My main goal was to create this portfolio page purely with HTML + CSS - it was a great challenge:) I have used Mobile 1st Design Strategy. Validated both HTML & CSS code.
 
+**Version: 0.4 2023.01.31**
+
+- user-select: none
+- changed Home section photo
+- logo added
+- created hamburger menu
+- removed photo from About section
+- changed padding, margin attributes
+- changed color of section titles and logos to increase readability (passed all test in colourcontrast.cc)
+- Skills section: changed logos' size and made it more interactive
+- Contact section: changed form attributes
+- Modified HTML comments
+- Responsive design: mobile (375x667), tablet (768x1024), desktop (1024x768)
+
 **Version: 0.3 2023.01.25**
 
 - changed main photo
